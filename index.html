@@ -40,9 +40,9 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
     <style>
-        .navbar {
+       .navbar {
             background-color: black;
-            transition: background-color 0.3s   ease-in-out;
+            transition: background-color 0.3s ease-in-out;
             height: 80px;
         }
 
@@ -61,7 +61,6 @@
         }
 
         .navbar-nav {
-            margin-left: auto;
             background-color: black;
         }
 
@@ -77,20 +76,30 @@
         .nav-link:hover {
             color: #ffcc00;
             text-decoration: none;
-
-        }
-        .company-name {
-            font-size: 30px;  
-            font-weight: bold; 
-            color: #ffcc00; 
-            text-decoration: none;
         }
 
+        .company-logo {
+            height: 65px; /* Adjust the height as needed */
+            width: auto;
+        }
 
-        .company-name:hover {
-                color: #8d7619; 
-                text-decoration: none;
-            }
+        .navbar-nav-center {
+            margin: 0 auto;
+        }
+
+        .chat-button {
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-size: 15px;
+        }
+
+        .chat-button:hover {
+            background-color: #d4a300;
+            color: white;
+        }
     </style>
 </head>
 
@@ -107,30 +116,35 @@
 
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container" id="nav_container">
-                    <a class="navbar-brand company-name" href="index.html">KeyDot</a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mx-auto navbar-nav-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
+                                <a class="nav-link" href="index.html">About us</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="portfolio/vertical-slider/portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="portfolio/vertical-slider/portfolio.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="services.html">Services</a>
+                                <a class="nav-link" href="services.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="about.html">Download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                         </ul>
+                        <button class="btn chat-button ms-auto">Chat with Us</button>
                     </div>
                 </div>
             </nav>
-
 
 
             <div class="mil-content">
