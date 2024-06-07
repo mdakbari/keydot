@@ -2194,7 +2194,7 @@ textarea {
     padding: 60px 30px
 }
 
-.mil-service-card-sm p {
+/* .mil-service-card-sm p {
     opacity: 0;
     transform: translateY(10px);
     overflow: hidden;
@@ -2203,7 +2203,7 @@ textarea {
     line-clamp: 3;
     -webkit-box-orient: vertical;
     transition: .4s cubic-bezier(0, 0, .3642, 1)
-}
+} */
 
 .mil-service-card-sm .mil-button {
     transform: scale(.3);
@@ -2221,11 +2221,11 @@ textarea {
     background-color: #ff9800;
     transition: .6s cubic-bezier(0, 0, .3642, 1)
 }
-
+/* 
 .mil-service-card-sm:hover p {
     opacity: 1;
     transform: translateY(0)
-}
+} */
 
 .mil-service-card-sm:hover .mil-button {
     transform: scale(1);
