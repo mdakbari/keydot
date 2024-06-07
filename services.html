@@ -41,57 +41,66 @@
     
     <style>
         .navbar {
-            background-color: black;
-            transition: background-color 0.3s;
-            height: 80px;
-        }
-
-        .navbar.expanded {
-            background-color: black;
-        }
-
-        .navbar-brand {
-            color: #ffffff;
-            margin-right: 20px;
-        }
-
-        .navbar-brand:hover {
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-
-        .navbar-nav {
-            margin-left: auto;
-            background-color: black;
-        }
-
-        .nav-link {
-            color: #ffffff;
-            margin-right: 15px;
-            text-decoration: none;
-            position: relative;
-            margin-left: 20px;
-            text-align: center;
-        }
-
-        .nav-link:hover {
-            color: #ffcc00;
-            text-decoration: none;
-
-        }
-        .company-name {
-            font-size: 30px;  
-            font-weight: bold; 
-            color: #ffcc00; 
-            text-decoration: none;
-        }
-
-
-        .company-name:hover {
-                color: #8d7619; 
-                text-decoration: none;
-            }
-    </style>
+             background-color: black;
+             transition: background-color 0.3s ease-in-out;
+             height: 80px;
+         }
+ 
+         .navbar.expanded {
+             background-color: black;
+         }
+ 
+         .navbar-brand {
+             color: #ffffff;
+             margin-right: 20px;
+         }
+ 
+         .navbar-brand:hover {
+             color: #ff9800;
+             text-decoration: underline;
+         }
+ 
+         .navbar-nav {
+             background-color: black;
+         }
+ 
+         .nav-link {
+             color: #ffffff;
+             margin-right: 15px;
+             text-decoration: none;
+             position: relative;
+             margin-left: 20px;
+             text-align: center;
+         }
+ 
+         .nav-link:hover {
+             color: #ff9800;
+             text-decoration: none;
+         }
+ 
+         .company-logo {
+             height: 65px; /* Adjust the height as needed */
+             width: auto;
+         }
+ 
+         .navbar-nav-center {
+             margin: 0 auto;
+         }
+ 
+         .chat-button {
+             background-color: #ff9800;
+             color: black;
+             border: none;
+             padding: 10px 20px;
+             border-radius: 10px;
+             font-size: 15px;
+         }
+ 
+         .chat-button:hover {
+             background-color: #ff9800;
+             color: white;
+         }
+     </style>
 </head>
 
 <body>
@@ -107,29 +116,39 @@
 
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container" id="nav_container">
-                    <a class="navbar-brand company-name" href="index.html">KeyDot</a>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
+                    </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav mx-auto navbar-nav-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="vertical-slider/portfolio.html">Portfolio</a>
+                                <a class="nav-link" href="index.html">About us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="services.html">Services</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.html">Contact</a>
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="download.html">Download</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                         </ul>
+                        <a href="">
+                            
+                        <button class="btn chat-button ms-auto">Chat with Us</button>
+                        </a>
                     </div>
                 </div>
             </nav>
+
 
         
         
@@ -158,175 +177,139 @@
                                 </div>
                             </div>
                         </div>
-                        <section id="services">
-                            <div class="mi-invert-fix">
-                                <div class="container mil-p-120-60">
-                                    <div class="row">
+                     
+                    </div>
+               
+                    <section class="mil-dark-bg">
+                        <div class="mi-invert-fix">
+                            <div class="mil-animation-frame">
 
-                                        <div class="col-lg-10">
-                                            <div class="row">
-                                                <div class="col-md- col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor mil-offset"
-                                                        href="services/service-1.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Branding and <br>Identity
-                                                            Design</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
-                                                <div class="col-md-6 col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor mil-offset"
-                                                        href="services/service-1.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Branding and <br>Identity
-                                                            Design</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
-                                                <div class="col-md-6 col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor mil-offset"
-                                                        href="services/service-1.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Branding and <br>Identity
-                                                            Design</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
-                                                <div class="col-md-6 col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor"
-                                                        href="services/service-2.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Website Design <br>and
-                                                            Development</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
-                                                <div class="col-md-6 col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor mil-offset"
-                                                        href="services/service-3.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Advertising and
-                                                            <br>Marketing Campaigns</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
-                                                <div class="col-md-6 col-lg-6"><a
-                                                        class="mil-service-card-lg mil-more mil-accent-cursor"
-                                                        href="services/service-4.html">
-                                                        <h4 class="mil-muted mil-up mil-mb-30">Creative Consulting
-                                                            <br>Concept Development</h4>
-                                                        <p class="mil-descr mil-light-soft mil-up mil-mb-30">Our
-                                                            creative agency is a team of professionals focused on
-                                                            helping your brand grow.</p>
-                                                        <ul class="mil-service-list mil-light mil-mb-30">
-                                                            <li class="mil-up">UX Audits</li>
-                                                            <li class="mil-up">Design thinking</li>
-                                                            <li class="mil-up">Wireframing</li>
-                                                            <li class="mil-up">Methodologies</li>
-                                                        </ul>
-                                                        <div class="mil-link mil-accent mil-arrow-place mil-up">
-                                                            <span>Read more</span><svg
-                                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                                class="mil-arrow">
-                                                                <path
-                                                                    d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                                </path>
-                                                            </svg></div>
-                                                    </a></div>
+                                <div class="mil-animation mil-position-2 mil-scale" data-value-1="2" data-value-2="1"
+                                    style="left:150px">
+                                  
+                                </div>
+                            </div>
+                            <div class="container mil-p-120-0">
+                                <div class="mil-mb-120">
+                              
+                                <div class="row m-0">
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-1.html">
+                                            <h5 class="mil-muted mil-mb-30">SOCAIL MEDIA  <br> DESIGNS</h5>
+                                            <p class="mil-muted mil-mb-30">Social Media Posters, Reels,
+                                                and Page Manage</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
                                             </div>
-                                        </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-3.html">
+                                            <h5 class="mil-muted mil-mb-30">PACKAGING  <br>DESIGN </h5>
+                                            <p class="mil-muted mil-mb-30">Box, Label,  Stiker <br> Bag</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div> 
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-2.html">
+                                            <h5 class="mil-muted mil-mb-30"> MARKETING   <br>AND ADVERTISING</h5>
+                                            <p class="mil-muted mil-mb-30">Flyer, Poster, Bill Board, Store
+                                                Design, Magazine Ads</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-4.html">
+                                            <h5 class="mil-muted mil-mb-30">BRAND DESIGN</h5>
+                                            <p class="mil-muted mil-mb-30">Logo, Slogan, Color Palettes,
+                                                Visiting Card/ Digital Business
+                                                Card, Letter Head, Tshirt</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-5.html">
+                                            <h5 class="mil-muted mil-mb-30">INFORMATIVE DESIGN</h5>
+                                            <p class="mil-muted mil-mb-30"> Catalogue, Brochure, Product
+                                                Datasheet, Company Profile,
+                                                Presentation</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-6.html">
+                                            <h5 class="mil-muted mil-mb-30">3D PRODUCTION</h5>
+                                            <p class="mil-muted mil-mb-30">Structure, Modeling,
+                                                Texture, Video
+                                                development, <br> Motion    
+                                            </p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-4.html">
+                                            <h5 class="mil-muted mil-mb-30">DATA ENTRY WORKS</h5>
+                                            <p class="mil-muted mil-mb-30">Product Entry Works,
+                                                SAP Entry, Backend Entry
+                                                Works, Excel, Word Data entry</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-5.html">
+                                            <h5 class="mil-muted mil-mb-30">INVITATIONS</h5>
+                                            <p class="mil-muted mil-mb-30"> Wedding, Opening,
+                                                Function, New Lunching,
+                                                Festival Party's</p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4 p-0">
+                                        <a class="mil-service-card-sm mil-up" href="services/service-6.html">
+                                            <h5 class="mil-muted mil-mb-30">WEB DEVELOPMENT</h5>
+                                            <p class="mil-muted mil-mb-30">SUI UX , Theam Design
+                                                PDF, Website
+                                                Development    
+                                            </p>
+                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
+                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
+                                                </svg>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
-                    </div>
-                    <section class="mil-soft-bg">
-                        <div class="container mil-p-120-120">
-                            <div class="row">
-                                <div class="col-lg-10"><span
-                                        class="mil-suptitle mil-suptitle-right mil-suptitle-dark mil-up">Looking to make
-                                        your mark? We'll help you turn <br> your project into a success story.</span>
-                                </div>
-                            </div>
-                            <div class="mil-center">
-                                <h2 class="mil-up mil-mb-60">Ready to bring your <span class="mil-thin">ideas to</span>
-                                    life? <br> We're <span class="mil-thin">here to help</span></h2>
-                                <div class="mil-up"><a class='mil-button mil-arrow-place' href='/contact'><span>Contact us</span><svg
-                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                            <path
-                                                d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                            </path>
-                                        </svg></a></div>
                             </div>
                         </div>
                     </section>
@@ -335,78 +318,46 @@
                         <div class="mi-invert-fix">
                             <div class="container mil-p-120-60">
                                 <div class="row justify-content-between">
+                                    <div class="col-md-2 col-lg-2 mil-mb-60">
+                                        <div class="mil-muted mil-logo mil-up mil-mb-30">
+                                            <img src="img/logo/logo.png" alt="logo" width="150">
+                                        </div>
+                                    </div>
+                                    <!-- Second left: Contact details -->
                                     <div class="col-md-4 col-lg-4 mil-mb-60">
-                                        <div class="mil-muted mil-logo mil-up mil-mb-30">KeyDot</div>
-                                        <p class="mil-light-soft mil-up mil-mb-30">Subscribe our newsletter:</p>
-                                        <form action="#" method="post" target="_blank"
-                                            class="mil-subscribe-form mil-up"><input type="email"
-                                                placeholder="Enter our email" name="EMAIL" required="" /><input
-                                                type="hidden" name="" /><button type="submit"
-                                                class="mil-button mil-icon-button-sm mil-arrow-place"><svg
-                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                                    class="mil-arrow">
-                                                    <path
-                                                        d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z">
-                                                    </path>
-                                                </svg></button></form>
+                                        <h6 class="mil-muted mil-up mil-mb-30" style="color:#ff9800">KEYDOT GROUP                                        </h6>
+                                        <p class="mil-muted mil-up">A-410, Rosebill Sky
+                                            Complex,
+                                            <br> Near Sukan Cross
+                                            Road, Nikol, 
+                                            <br>
+                                            Ahmedabad, Gujarat,
+                                            <br> India, 382350</p>
+                                            
+                                        <a class="mil-muted mil-up" style="color: #ff9800;" href="mailto:info.keydot@gmail.com" >info.keydot@gmail.com</a>
+                                            
                                     </div>
-                                    <div class="col-md-7 col-lg-6">
-                                        <div class="row justify-content-end">
-                                            <div class="col-md-6 col-lg-7">
-                                                <nav class="mil-footer-menu mil-mb-60">
-                                                    <ul> 
-                                                        <li class="mil-active mil-up"><a href="index.html">Home</a>
-                                                    </li>
-                                                    <li class="mil-up"><a href="vertical-slider/portfolio.html">Portfolio</a></li>
-                                                    <li class="mil-up"><a href="services.html">Services</a></li>
-                                                    <li class="mil-up"><a href="contact.html">Contact</a></li>
-                                                   
-                                                    </ul>
-                                                </nav>
-                                            </div>
-                                            <div class="col-md-6 col-lg-5">
-                                                <ul class="mil-menu-list mil-up mil-mb-60">
-                                                    <li><a href="#." class="mil-light-soft">Privacy Policy</a></li>
-                                                    <li><a href="#." class="mil-light-soft">Terms and conditions</a>
-                                                    </li>
-                                                    <li><a href="#." class="mil-light-soft">Cookie Policy</a></li>
-                                                    <li><a href="#." class="mil-light-soft">Careers</a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
+                                    <!-- Second right: Useful links -->
+                                    <div class="col-md-3 col-lg-3 mil-mb-60">
+                                        <h6 class="mil-muted mil-up mil-mb-30">Useful Links</h6>
+                                        <ul class="mil-menu-list mil-up">
+                                            <li><a href="#." class="mil-muted">About</a></li>
+                                            <li><a href="#." class="mil-muted">Contact</a></li>
+                                            <li><a href="#." class="mil-muted">Portfolio</a></li>
+                                            <li><a href="#." class="mil-muted">Services</a></li>
+                                        </ul>
                                     </div>
-                                </div>
-                                <div class="row justify-content-between flex-sm-row-reverse">
-                                    <div class="col-md-7 col-lg-6">
-                                        <div class="row justify-content-between">
-                                            <div class="col-md-6 col-lg-5 mil-mb-60">
-                                                <h6 class="mil-muted mil-up mil-mb-30">Canada</h6>
-                                                <p class="mil-light-soft mil-up">71 South Los Carneros Road, California
-                                                    <span class="mil-no-wrap">+51 174 705 812</span></p>
-                                            </div>
-                                            <div class="col-md-6 col-lg-5 mil-mb-60">
-                                                <h6 class="mil-muted mil-up mil-mb-30">Germany</h6>
-                                                <p class="mil-light-soft mil-up">Leehove 40, 2678 MC De Lier,
-                                                    Netherlands <span class="mil-no-wrap">+31 174 705 811</span></p>
-                                            </div>
-                                        </div>
+                                    <!-- Right side: Social media icons -->
+                                    <div class="col-md-2 col-lg-2 mil-mb-60">
+                                        <h6 class="mil-muted mil-up mil-mb-30">Social Media</h6>
+
+                                        <ul class="mil-social-icons mil-up">
+                                            <li><a href="https://behance.net/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a></li>
+                                            <li><a href="https://dribbble.com/" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin"></i></a></li>
+                                            <li><a href="https://twitter.com/" target="_blank" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+                                            <li><a href="https://github.com/" target="_blank" class="social-icon"><i class="fab fa-github"></i></a></li>
+                                        </ul>
                                     </div>
-                                    <div class="col-md-4 col-lg-6 mil-mb-60">
-                                        <div class="mil-vert-between">
-                                            <div class="mil-mb-30">
-                                                <ul class="mil-social-icons mil-up">
-                                                    <li><a href="https://behance.net/" target="_blank"
-                                                            class="social-icon"><i class="fab fa-behance"></i></a></li>
-                                                    <li><a href="https://dribbble.com/" target="_blank"
-                                                            class="social-icon"><i class="fab fa-dribbble"></i></a></li>
-                                                    <li><a href="https://twitter.com/" target="_blank"
-                                                            class="social-icon"><i class="fab fa-twitter"></i></a></li>
-                                                    <li><a href="https://github.com/" target="_blank"
-                                                            class="social-icon"><i class="fab fa-github"></i></a></li>
-                                                </ul>
-                                            </div>
-                                            <p class="mil-light-soft mil-up">© 2023 Ashley. All Rights Reserved.</p>
-                                        </div>
                                     </div>
                                 </div>
                             </div>
