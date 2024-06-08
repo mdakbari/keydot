@@ -43,11 +43,12 @@
     
     <style>
        .navbar {
-            background-color: black;
-            transition: background-color 0.3s ease-in-out;
-            height: 80px;
+        background-color: black;
+    transition: background-color 0.3s ease-in-out;
+    height: 80px;
+    margin: auto
         }
-
+       
         .navbar.expanded {
             background-color: black;
         }
@@ -73,6 +74,7 @@
             position: relative;
             margin-left: 20px;
             text-align: center;
+            
         }
 
         .nav-link:hover {
@@ -1017,11 +1019,7 @@
                                                     <i class="fab fa-upwork"></i>
                                                 </a>
                                             </li>
-                                            <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
-                                                    <i class="fab fa-Behance"></i>
-                                                </a>
-                                            </li>
+                                           
                                         </ul>
                                     </div>
                                 </div>
@@ -1032,6 +1030,10 @@
                                     </p>
                                 </div>
                             </div>
+
+                        </div>
+                        <div class="circle-blur">
+                            <img src="img/logo/blur1.png" alt="">
                         </div>
                       
                     </footer>
@@ -1063,6 +1065,7 @@
     color: #ff9800;
     font-weight: bold;
     margin-bottom: 30px;
+    font-weight: 600;
 }
 
 .clean-footer .column {
@@ -1071,6 +1074,9 @@
 
 .clean-footer .column h6.sub-title {
     color: #ff9800;
+    font-weight: 600;
+    font-size: 25px;
+    
 }
 
 .clean-footer .column h6.p-color {
@@ -1151,10 +1157,15 @@
     width: 25%;
 }
 
-.clean-footer .social-icon li a {
+
+
+.clean-footer .social-icon  a {
     color: #ff9800;
-    font-size: 18px;
+    font-size: 30px;
     transition: color 0.3s ease;
+    border: 1px solid   rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
 }
 
 .clean-footer .social-icon li a:hover {
@@ -1167,20 +1178,22 @@
 
 .clean-footer .circle-blur img {
     position: absolute;
-    bottom: -50px;
-    right: -50px;
-    max-width: 150px;
-    opacity: 0.5;
+    bottom: -450px;
+    right: -220px;
+    width: 900px;
+    opacity: 0.2;
 }
 
 .clean-footer .text-center p {
     color: #ffffff;
     opacity: 0.7;
+    font-size: 25px;
 }
 
 .clean-footer .text-center p a {
     color: #ffcc00;
     text-decoration: none;
+    font-size: 25px;
 }
 
 .clean-footer .text-center p a:hover {
@@ -1213,6 +1226,7 @@
 }
 
     </style>
+    
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
