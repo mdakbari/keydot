@@ -117,7 +117,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container" id="nav_container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/1.png" alt="KeyDot Logo" class="company-logo">
+                        <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,14 +141,21 @@
                                 <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                         </ul>
-                        <a href="">
-                            
-                        <button class="btn chat-button ms-auto">Chat with Us</button>
-                        </a>
+                        <a class="btn chat-button ms-auto" id="chat_us" >Chat with Us</a>
                     </div>
                 </div>
             </nav>
 
+            <script>
+                document.getElementById("chat_us").addEventListener("click", function () {
+
+                        const pnumber = 9016755950
+                        const message = "Hello, I am interested in your products. Please provide me with more details."
+
+                        const url = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(message)}`
+                        window.location.href = url
+                    });
+            </script>
 
         
         
@@ -179,73 +186,13 @@
                         </div>
                      
                     </div>
-<style>
-/* Ensure there is no space in the card when not hovered
-.service-img-container {
-    position: relative;
-    overflow: hidden;
-    height: 0;
-    transition: height 0.3s ease-in-out;
-}
 
-.service-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: auto; 
-    object-fit: cover;
-    opacity: 0;
-    transform: scale(1.2);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.mil-service-card-sm:hover .service-img-container {
-    margin-top: 10px;
-    height: 200px;
-    width: 300px; 
-}
-
-.mil-service-card-sm:hover .service-img {
-    opacity: 1;
-    transform: scale(1);
-} */
-
-
-/* Basic styling for the card */
-.mil-service-card-sm {
-    position: relative;
-}
-
-.service-img-container {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 0;
-    overflow: hidden;
-    z-index: -1; /* Ensure it's below the text content */
-    transition: height 0.3s ease-in-out;
-}
-
-.service-img {
-    width: 100%;
-    height: auto; /* Adjust to your preferred aspect ratio */
-    opacity: 0;
-    transform: scale(1.2);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-
-.mil-service-card-sm:hover .service-img-container {
-    height: 200px; /* Set desired height on hover */
-    z-index: 0; /* Bring it to the front on hover */
-}
-
-.mil-service-card-sm:hover .service-img {
-    opacity: 1;
-    transform: scale(1);
-}
-</style>
+                    <style>
+                        .mil-service-card-sm {
+                            border: none;
+                            border-radius: 0;
+                        }
+                    </style>
                
                     <section class="mil-dark-bg">
                         <div class="mi-invert-fix">
@@ -266,46 +213,35 @@
                                             <h6 class="mil-muted mil-mb-30">SOCAIL MEDIA  <br> DESIGNS</h6>
                                             <p class="mil-muted mil-mb-30">Social Media Posters, Reels,
                                                 and Page Manage</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
                                         </a>
                                     </div>
+                                  
                                     <div class="col-md-4 p-0">
-                                        <a class="mil-service-card-sm mil-up" href="services/service-3.html">
-                                            <h5 class="mil-muted mil-mb-30">PACKAGING  <br>DESIGN </h5>
-                                            <p class="mil-muted mil-mb-30">Box, Label,  Stiker <br> Bag</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                        <a class="mil-service-card-sm mil-up" href="services/service-2.html">
+                                            <h6 class="mil-muted mil-mb-30"> PACKAGING   <br>DESIGN</h6>
+                                            <p class="mil-muted mil-mb-30">Box, Label,  Stiker Bag</p>
+                                            
+                                            <br>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
+
                                         </a>
-                                    </div> 
+                                    </div>
                                     <div class="col-md-4 p-0">
                                         <a class="mil-service-card-sm mil-up" href="services/service-2.html">
                                             <h6 class="mil-muted mil-mb-30"> MARKETING   <br>AND ADVERTISING</h6>
                                             <p class="mil-muted mil-mb-30">Flyer, Poster, Bill Board, Store
                                                 Design, Magazine Ads</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -316,15 +252,10 @@
                                             <p class="mil-muted mil-mb-30">Logo, Slogan, Color Palettes,
                                                 Visiting Card/ Digital Business
                                                 Card, Letter Head, Tshirt</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -334,15 +265,10 @@
                                             <p class="mil-muted mil-mb-30"> Catalogue, Brochure, Product
                                                 Datasheet, Company Profile,
                                                 Presentation</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -354,15 +280,10 @@
                                                 <br> Video
                                                 development, <br> Motion    
                                             </p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -372,15 +293,10 @@
                                             <p class="mil-muted mil-mb-30">Product Entry Works,
                                                 SAP Entry, Backend Entry
                                                 , Excel, Data Entry </p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -390,15 +306,10 @@
                                             <p class="mil-muted mil-mb-30"> Wedding, Opening,
                                                 Function, New Lunching,
                                                 Festival Party's</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -409,15 +320,10 @@
                                                 PDF, Website
                                                 Development    
                                             </p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
                                             
-                                              <div class="service-img-container">
-                                            <img src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-                                            </div>
+                                            <br>
+                                            <br>
+                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -425,12 +331,13 @@
                             </div>
                         </div>
                     </section>
+
                     <footer class="clean-footer crev">
                         <div class="container pb-40 pt-40 ontop">
                             <div class="row justify-content-between">
                                 <div class="col-lg-2">
                                     <div class="logo icon-img-100 md-mb80">
-                                        <img src="img/logo/1.png" alt="">
+                                        <img src="img/logo/logo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
@@ -525,7 +432,7 @@
                       
                     </footer>
 
-
+                </div>
             </div>
         </div>
     </div>
@@ -650,7 +557,8 @@
     color: #ff9800;
     font-size: 30px;
     transition: color 0.3s ease;
-
+    border: 1px solid   rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
 
 }
 
@@ -712,11 +620,6 @@
 }
 
     </style>
-
-                </div>
-            </div>
-        </div>
-    </div>
 </body>
 
 </html>

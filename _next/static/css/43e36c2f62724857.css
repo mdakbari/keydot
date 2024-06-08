@@ -457,6 +457,7 @@ a {
 }
 
 .mil-img-frame img {
+
     position: absolute;
     top: 0;
     left: 0;
@@ -916,7 +917,7 @@ textarea {
 }
 
 .mil-p-120-30 {
-    padding-top: 120px;
+    padding-top: 30px;
     padding-bottom: 30px
 }
 
@@ -2191,7 +2192,10 @@ textarea {
 .mil-service-card-sm {
     position: relative;
     display: block;
-    padding: 60px 30px
+    padding: 60px 30px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px; Optional: Add rounded corners
+
 }
 
 /* .mil-service-card-sm p {

@@ -183,11 +183,11 @@ figure {
 }
 
 .main-color {
-  color: #fd5b38 !important;
+  color: #ff9800 !important;
 }
 
 .main-colorbg {
-  background: #fd5b38 !important;
+  background: #ff9800 !important;
 }
 
 .main-color2 {
@@ -605,7 +605,7 @@ figure {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #ff9800;
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -615,7 +615,7 @@ figure {
 }
 
 .btn-circle:hover {
-  border-color: #fd5b38;
+  border-color: #ff9800;
 }
 
 .btn-circle:hover:after {
@@ -874,7 +874,7 @@ figure {
 }
 
 .vi-more:hover .icon {
-  background: #fd5b38;
+  background: #ff9800;
 }
 
 /* Cursor
@@ -3644,7 +3644,7 @@ body.loaded {
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #ff9800;
   position: absolute;
   top: 50%;
   left: 15px;
@@ -3903,7 +3903,7 @@ body.loaded {
   line-height: 40px;
   text-align: center;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #ff9800;
   color: #0c0c0c;
   font-size: 20px;
 }
@@ -4141,7 +4141,7 @@ body.loaded {
 }
 
 .sidebar .widget.tags a:hover {
-  background: #fd5b38;
+  background: #ff9800;
 }
 
 .blog-main .item .content {
@@ -4257,7 +4257,7 @@ body.loaded {
 
 .main-post .info-area .tags a:hover,
 .main-post .info-area .share-icon a:hover {
-  background: #fd5b38;
+  background: #ff9800;
   color: #1d1d1d;
 }
 
@@ -4664,7 +4664,7 @@ body.loaded {
 
 /* Footer
 -----------------------------------------------------------------*/
-footer .subscribe-minimal .form-group {
+/* footer .subscribe-minimal .form-group {
   position: relative;
 }
 
@@ -4726,7 +4726,7 @@ footer.clean-footer.crev .circle-blur {
   right: 50px;
   width: 400px;
   z-index: -1;
-}
+} */
 
 /* Headers
 -----------------------------------------------------------------*/
@@ -4976,7 +4976,7 @@ footer.clean-footer.crev .circle-blur {
   height: 85px;
   line-height: 85px;
   text-align: center;
-  background: #fd5b38;
+  background: #ff9800;
   position: absolute;
   top: 0;
   left: 100px;
@@ -5022,7 +5022,7 @@ footer.clean-footer.crev .circle-blur {
   line-height: 60px;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #fd5b38;
+  border: 1px solid #ff9800;
   margin-left: -20px;
 }
 
@@ -5966,7 +5966,7 @@ footer.clean-footer.crev .circle-blur {
 
 .filtering span.active {
   opacity: 1;
-  color: #fd5b38;
+  color: #ff9800;
 }
 
 .filtering span.text {
@@ -6259,7 +6259,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .services-clas .item a:hover {
-  background: #fd5b38;
+  background: #ff9800;
 }
 
 .services-inline2 .item {
@@ -6310,7 +6310,7 @@ footer.clean-footer.crev .circle-blur {
   line-height: 100px;
   text-align: center;
   border-radius: 50%;
-  background: #fd5b38;
+  background: #ff9800;
   position: absolute;
   top: 20px;
   right: 20px;
@@ -7103,8 +7103,8 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team .item .social .links a:hover {
-  background: #fd5b38;
-  border-color: #fd5b38;
+  background: #ff9800;
+  border-color: #ff9800;
   color: #111;
 }
 
@@ -7231,7 +7231,7 @@ footer.clean-footer.crev .circle-blur {
 }
 
 .team-crev2 .item .img .social a:hover {
-  background: #fd5b38;
+  background: #ff9800;
 }
 
 .team-crev2 .item:hover .img .social {

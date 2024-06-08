@@ -115,6 +115,7 @@
                 $('.navbar').toggleClass('expanded');
             });
         });
+									
     </script>
     <div id="__next">
         <div class="mil-wrapper" id="top">
@@ -122,7 +123,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container" id="nav_container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/1.png" alt="KeyDot Logo" class="company-logo">
+                        <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,14 +147,22 @@
                                 <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                         </ul>
-                        <a href="">
                             
-                        <button class="btn chat-button ms-auto">Chat with Us</button>
-                        </a>
+                        <a class="btn chat-button ms-auto" id="chat_us" >Chat with Us</a>
                     </div>
                 </div>
             </nav>
 
+            <script>
+                document.getElementById("chat_us").addEventListener("click", function () {
+
+                        const pnumber = 9016755950
+                        const message = "Hello, I am interested in your products. Please provide me with more details."
+
+                        const url = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(message)}`
+                        window.location.href = url
+                    });
+            </script>
 
             <div class="mil-content">
                 <div id="swupMain" class="mil-main-transition">
@@ -670,22 +679,14 @@
                                             <h5 class="mil-muted mil-mb-30">SOCAIL MEDIA  <br> DESIGNS</h5>
                                             <p class="mil-muted mil-mb-30">Social Media Posters, Reels,
                                                 and Page Manage</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
                                         <a class="mil-service-card-sm mil-up" href="services/service-3.html">
                                             <h5 class="mil-muted mil-mb-30">PACKAGING  <br>DESIGN </h5>
                                             <p class="mil-muted mil-mb-30">Box, Label,  Stiker <br> Bag</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div> 
                                     <div class="col-md-4 p-0">
@@ -693,11 +694,7 @@
                                             <h5 class="mil-muted mil-mb-30"> MARKETING   <br>AND ADVERTISING</h5>
                                             <p class="mil-muted mil-mb-30">Flyer, Poster, Bill Board, Store
                                                 Design, Magazine Ads</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     
@@ -707,11 +704,7 @@
                                             <p class="mil-muted mil-mb-30">Logo, Slogan, Color Palettes,
                                                 Visiting Card/ Digital Business
                                                 Card, Letter Head, Tshirt</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -720,11 +713,7 @@
                                             <p class="mil-muted mil-mb-30"> Catalogue, Brochure, Product
                                                 Datasheet, Company Profile,
                                                 Presentation</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -734,24 +723,15 @@
                                                 Texture, Video
                                                 development, <br> Motion    
                                             </p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
                                         <a class="mil-service-card-sm mil-up" href="services/service-4.html">
                                             <h5 class="mil-muted mil-mb-30">DATA ENTRY WORKS</h5>
                                             <p class="mil-muted mil-mb-30">Product Entry Works,
-                                                SAP Entry, Backend Entry
-                                                Works, Excel, Word Data entry</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                                SAP Entry, Backend Entry, Excel,  Data entry</p>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -760,11 +740,7 @@
                                             <p class="mil-muted mil-mb-30"> Wedding, Opening,
                                                 Function, New Lunching,
                                                 Festival Party's</p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -774,23 +750,27 @@
                                                 PDF, Website
                                                 Development    
                                             </p>
-                                            <div class="mil-button mil-icon-button-sm mil-arrow-place">
-                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="mil-arrow">
-                                                    <path d="M 14 5.3417969 C 13.744125 5.3417969 13.487969 5.4412187 13.292969 5.6367188 L 13.207031 5.7226562 C 12.816031 6.1136563 12.816031 6.7467188 13.207031 7.1367188 L 17.070312 11 L 4 11 C 3.448 11 3 11.448 3 12 C 3 12.552 3.448 13 4 13 L 17.070312 13 L 13.207031 16.863281 C 12.816031 17.254281 12.816031 17.887344 13.207031 18.277344 L 13.292969 18.363281 C 13.683969 18.754281 14.317031 18.754281 14.707031 18.363281 L 20.363281 12.707031 C 20.754281 12.316031 20.754281 11.682969 20.363281 11.292969 L 14.707031 5.6367188 C 14.511531 5.4412187 14.255875 5.3417969 14 5.3417969 z"></path>
-                                                </svg>
-                                            </div>
+                                            
                                         </a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </section>
+                    <style>
+                        .mil-service-card-sm .mil-mb-30{
+                            margin-bottom: 5px !important;
+                        }
+                    </style>
+
+
+
 
                     
                     <section>
                         <div class="container mil-p-120-30">
                             <div class="row justify-content-between align-items-center">
-                                <div class="col-lg-5 col-xl-4">
+                                <div class="col-lg-6 col-xl-4">
                                     <div class="mil-mb-90">
                                         <h2 class="mil-up mil-mb-30">Meet <br>Founder</h2>
                                         <h5>She Says</h5>
@@ -812,7 +792,7 @@
                                                 class="mil-thin">exceptional</span> results.</h4>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <div class="mil-about-photo mil-mb-90">
                                         <div class="mil-lines-place"><svg width="250" viewBox="0 0 300 1404" fill="none"
                                                 xmlns="http://www.w3.org/2000/svg" class="mil-lines">
@@ -840,7 +820,7 @@
                                                 </path>
                                             </svg></div>
                                         <div class="mil-up mil-img-frame" style="padding-bottom:160%"><img
-                                                src="img/logo/studio.jpg" alt="img" class="mil-scale" data-value-1="1"
+                                                src="img/logo/founder.jpeg" alt="img" class="mil-scale" data-value-1="1"
                                                 data-value-2="1.2" /></div>
                                     </div>
                                 </div>
@@ -879,7 +859,7 @@
                     
                     </section>
                     
-                    <style>
+        <style>
                 .logo-section {
                            
             padding: 20px 0;
@@ -943,7 +923,7 @@
                             <div class="row justify-content-between">
                                 <div class="col-lg-2">
                                     <div class="logo icon-img-100 md-mb80">
-                                        <img src="img/logo/1.png" alt="">
+                                        <img src="img/logo/logo.png" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-4">
