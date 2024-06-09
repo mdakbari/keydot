@@ -679,27 +679,7 @@
 
 
 
-<script>
-     document.getElementById('contactform').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevent the default form submission
 
-            // Get form values
-            const name = document.getElementById('form_name').value;
-            const email = document.getElementById('form_email').value;
-            const subject = document.getElementById('form_subject').value;
-            const message = document.getElementById('form_message').value;
-
-            // Construct the WhatsApp message
-            const msg = `Name: ${name} \n Email: ${email} \n Subject: ${subject} \n Message: ${message}`;
-			const pnumber = 9016755950;
-
-			const whatsapp = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(msg)}`;
-
-			window.open(whatsapp, '_blank');
-        });
-		
-           
-</script>
 
     <!-- jQuery -->
     <script src="portfolio/assets/js/jquery-3.6.0.min.js"></script>
