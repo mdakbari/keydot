@@ -2,7 +2,7 @@
 <html lang="zxx">
 
 
-<!-- Mirrored from uithemez.com/i/webfolio/webfolio/portfolio-masonry.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 12:32:01 GMT -->
+<!-- Mirrored from uithemez.com/i/webfolio/webfolio/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 12:31:56 GMT -->
 <head>
 
     <!-- Metas -->
@@ -14,16 +14,13 @@
     <meta name="author" content="">
 
     <!-- Title  -->
-    <title>KeyDot - Portfolio</title>
+    <title>KeyDot - Contact</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="portfolio/assets/imgs/favicon.ico">
+    <link rel="shortcut icon" href="portfolio/portfolio/assets/imgs/favicon.ico">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700&amp;display=swap"
-        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6962e7c47e.js" crossorigin="anonymous"></script>
+    
 
     <!-- Plugins -->
     <link rel="stylesheet" href="portfolio/assets/css/plugins.css">
@@ -31,15 +28,15 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="portfolio/assets/css/style.css">
 
-
+    
     <style>
         .navbar {
-             background-color: black;
-             transition: background-color 0.3s ease-in-out;
-             height: 80px;
-             margin: auto;
+         background-color: black;
+     transition: background-color 0.3s ease-in-out;
+     height: 80px;
+     margin: auto
          }
- 
+        
          .navbar.expanded {
              background-color: black;
          }
@@ -56,6 +53,7 @@
  
          .navbar-nav {
              background-color: black;
+             font-family: 'Poppins', sans-serif !important;
          }
  
          .nav-link {
@@ -65,6 +63,7 @@
              position: relative;
              margin-left: 20px;
              text-align: center;
+             
          }
  
          .nav-link:hover {
@@ -96,505 +95,393 @@
          }
          
      </style>
-
 </head>
 
 <body>
 
 
 
+    <script>
+        $(document).ready(function () {
+            $('.navbar-toggler').click(function () {
+                $('.navbar').toggleClass('expanded');
+            });
+        });
+    </script>
 
 
-  
+    <!-- ==================== End progress-scroll-button ==================== -->
 
+
+
+    <!-- ==================== Start Navbar ==================== -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container" id="nav_container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto navbar-nav-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="download.html">Download</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                    </li>
+                </ul>
+                <a class="btn chat-button ms-auto" id="chat_us" >Chat with Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.getElementById("chat_us").addEventListener("click", function () {
+
+                const pnumber = 9016755950
+                const message = "Hello, I am interested in your products. Please provide me with more details."
+
+                const url = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(message)}`
+                window.location.href = url
+            });
+    </script>
+
+    <!-- ==================== End Navbar ==================== -->
 
     <div id="smooth-wrapper">
 
 
-
-        <!-- ==================== Start Navbar ==================== -->
-
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container" id="nav_container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="img/logo/1.png" alt="KeyDot Logo" class="company-logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto navbar-nav-center">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="download.html">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact us</a>
-                        </li>
-                    </ul>
-                    <a href="">
-                        
-                    <button class="btn chat-button ms-auto">Chat with Us</button>
-                    </a>
-                </div>
-            </div>
-        </nav>
-
-
-        <!-- ==================== End Navbar ==================== -->
-
-
-
         <div id="smooth-content">
 
-            <main class="main-bg">
+            <main class="main-bg o-hidden">
+
+                <main class="main-bg">
 
 
 
-                <!-- ==================== Start Header ==================== -->
-
-                <header class="page-header bg-img section-padding valign"
-                    data-background="portfolio/assets/imgs/background/bg4.jpg" data-overlay-dark="8">
-                    <div class="container pt-80">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="text-center">
-                                    <h1 class="text-u ls1 fz-80"><span class="fw-200">Masonry</span></h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </header>
-
-                <!-- ==================== End Header ==================== -->
-
-
-
-                <!-- ==================== Start Portfolio ==================== -->
-
-                <section class="work-minimal section-padding pb-40">
-                    <div class="container">
-                        <div class="row mb-80">
-                            <div class="col-lg-4">
-                                <div class="sec-head">
-                                    <h6 class="sub-title main-color mb-10">DISCOVER OUR CASES</h6>
-                                    <h3>Latest Projects</h3>
-                                </div>
-                            </div>
-                            <!-- filter links -->
-                            <div class="filtering col-lg-8 d-flex justify-content-end align-items-end">
-                                <div>
-                                    <div class="filter">
-                                        <span data-filter='*' class='active' data-count="08">All</span>
-                                        <span data-filter='.design' data-count="03">Design</span>
-                                        <span data-filter='.development' data-count="02">Development</span>
-                                        <span data-filter='.marketing' data-count="03">Marketing</span>
+                    <!-- ==================== Start Header ==================== -->
+    
+                    <header class="page-header bg-img section-padding valign"
+                        data-background="portfolio/assets/imgs/background/bg4.jpg" data-overlay-dark="8">
+                        <div class="container pt-80">
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="text-center">
+                                        <h1 class="text-u ls1 fz-80"><span class="fw-200">KeyDot</span></h1>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="container-xxl">
-                        <div class="gallery2 row sm-marg">
-                            <div class="col-lg-6 items design">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/h1.jpg" alt="">
-                                        <div class="cont inline d-flex align-items-center">
-                                            <div>
-                                                <h5>
-                                                    <a href="project-details.html">Nice guy with a smile</a>
-                                                </h5>
+                    </header>
+    
+                    <!-- ==================== End Header ==================== -->
+    
+    
+    
+                    <!-- ==================== Start Portfolio ==================== -->
+    
+                    <section class="work-minimal section-padding pb-40">
+                        <div class="container">
+                            <div class="row mb-80">
+                                <div class="col-lg-4">
+                                    <div class="sec-head">
+                                        <h6 class="sub-title main-color mb-10">DISCOVER OUR CASES</h6>
+                                        <h3>Latest Projects</h3>
+                                    </div>
+                                </div>
+                                <!-- filter links -->
+                                <div class="filtering col-lg-8 d-flex justify-content-end align-items-end">
+                                    <div>
+                                        <div class="filter">
+                                            <span data-filter='*' class='active' data-count="08">All</span>
+                                            <span data-filter='.design' data-count="03">Design</span>
+                                            <span data-filter='.development' data-count="02">Development</span>
+                                            <span data-filter='.marketing' data-count="03">Marketing</span>
+                                        </div>
+                                        <div class="filter" style="margin-top: 10px;">
+                                            <span data-filter='*' class='active' data-count="08">All</span>
+                                            <span data-filter='.design' data-count="03">Design</span>
+                                            <span data-filter='.development' data-count="02">Development</span>
+                                            <span data-filter='.marketing' data-count="03">Marketing</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-xxl">
+                            <div class="gallery2 row sm-marg">
+                                <div class="col-lg-6 items design">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/h1.jpg" alt="">
+                                            <div class="cont inline d-flex align-items-center">
+                                                <div>
+                                                    <h5>
+                                                        <a href="project-details.html">Nice guy with a smile</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <p>
+                                                        <a href="project-details.html">Graphic Designing</a>
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div class="ml-auto">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 items width2 marketing">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/portfolio/assets/imgs/works/4/1.jpg" alt="">
+                                            <div class="cont">
+                                                <h5>
+                                                    <a href="project-details.html">A Nice guy</a>
+                                                </h5>
                                                 <p>
-                                                    <a href="project-details.html">Graphic Designing</a>
+                                                    <a href="project-details.html">Graphic Design</a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-3 items width2 marketing">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/1.jpg" alt="">
-                                        <div class="cont">
-                                            <h5>
-                                                <a href="project-details.html">A Nice guy</a>
-                                            </h5>
-                                            <p>
-                                                <a href="project-details.html">Graphic Design</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 items width2 design">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/2.jpg" alt="">
-                                        <div class="cont">
-                                            <h5>
-                                                <a href="project-details.html">A Nice guy</a>
-                                            </h5>
-                                            <p>
-                                                <a href="project-details.html">Graphic Design</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 items width2 design">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/3.jpg" alt="">
-                                        <div class="cont">
-                                            <h5>
-                                                <a href="project-details.html">A Nice guy</a>
-                                            </h5>
-                                            <p>
-                                                <a href="project-details.html">Graphic Design</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 items width2 marketing">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/4.jpg" alt="">
-                                        <div class="cont">
-                                            <h5>
-                                                <a href="project-details.html">A Nice guy</a>
-                                            </h5>
-                                            <p>
-                                                <a href="project-details.html">Graphic Design</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6 items marketing">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/h2.jpg" alt="">
-                                        <div class="cont inline d-flex align-items-center">
-                                            <div>
+                                <div class="col-lg-3 items width2 design">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/2.jpg" alt="">
+                                            <div class="cont">
                                                 <h5>
-                                                    <a href="project-details.html">Nice guy with a smile</a>
+                                                    <a href="project-details.html">A Nice guy</a>
                                                 </h5>
-                                            </div>
-                                            <div class="ml-auto">
                                                 <p>
-                                                    <a href="project-details.html">Graphic Designing</a>
+                                                    <a href="project-details.html">Graphic Design</a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 items development">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/h3.jpg" alt="">
-                                        <div class="cont inline d-flex align-items-center">
-                                            <div>
+                                <div class="col-lg-3 items width2 design">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/3.jpg" alt="">
+                                            <div class="cont">
                                                 <h5>
-                                                    <a href="project-details.html">Nice guy with a smile</a>
+                                                    <a href="project-details.html">A Nice guy</a>
                                                 </h5>
-                                            </div>
-                                            <div class="ml-auto">
                                                 <p>
-                                                    <a href="project-details.html">Graphic Designing</a>
+                                                    <a href="project-details.html">Graphic Design</a>
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="col-lg-6 items development">
-                                <div class="item mt-10">
-                                    <div class="img">
-                                        <img src="portfolio/assets/imgs/works/4/h4.jpg" alt="">
-                                        <div class="cont inline d-flex align-items-center">
-                                            <div>
+                                <div class="col-lg-3 items width2 marketing">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/4.jpg" alt="">
+                                            <div class="cont">
                                                 <h5>
-                                                    <a href="project-details.html">Nice guy with a smile</a>
+                                                    <a href="project-details.html">A Nice guy</a>
                                                 </h5>
-                                            </div>
-                                            <div class="ml-auto">
                                                 <p>
-                                                    <a href="project-details.html">Graphic Designing</a>
+                                                    <a href="project-details.html">Graphic Design</a>
                                                 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 items marketing">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/h2.jpg" alt="">
+                                            <div class="cont inline d-flex align-items-center">
+                                                <div>
+                                                    <h5>
+                                                        <a href="project-details.html">Nice guy with a smile</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <p>
+                                                        <a href="project-details.html">Graphic Designing</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 items development">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/h3.jpg" alt="">
+                                            <div class="cont inline d-flex align-items-center">
+                                                <div>
+                                                    <h5>
+                                                        <a href="project-details.html">Nice guy with a smile</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <p>
+                                                        <a href="project-details.html">Graphic Designing</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 items development">
+                                    <div class="item mt-10">
+                                        <div class="img">
+                                            <img src="portfolio/assets/imgs/works/4/h4.jpg" alt="">
+                                            <div class="cont inline d-flex align-items-center">
+                                                <div>
+                                                    <h5>
+                                                        <a href="project-details.html">Nice guy with a smile</a>
+                                                    </h5>
+                                                </div>
+                                                <div class="ml-auto">
+                                                    <p>
+                                                        <a href="project-details.html">Graphic Designing</a>
+                                                    </p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
-                <!-- ==================== End Portfolio ==================== -->
-
-
-
-                <!-- ==================== Start Marquee ==================== -->
-
-                <section class="call-marq section-padding o-hidden">
-                    <div class="main-marq lrg sub-bg pt-20 pb-20">
-                        <div class="slide-har st1">
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Get In Touch</span>
-                                        <span class="icon-img-50 ml-40">
-                                            <img src="portfolio/assets/imgs/star.png" alt="">
-                                        </span>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main-marq bord-item">
-                        <div class="slide-har st2">
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                            </div>
-                            <div class="box">
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                                <div class="item">
-                                    <h4 class="d-flex align-items-center"><span>Contact Us</span>
-                                    </h4>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- ==================== End Marquee ==================== -->
-
-
+                    </section>
+    
+                    <!-- ==================== End Portfolio ==================== -->
+    
+    
+    
+                    <!-- ==================== Start Marquee ==================== -->
+    
+              
+    
+                    <!-- ==================== End Marquee ==================== -->
+    
+    
+    
+                </main>
+    
 
             </main>
 
 
             <!-- ==================== Start Footer ==================== -->
 
+          
             <footer class="clean-footer crev">
-                <div class="container pb-40 pt-40 ontop">
+                <div class="container ontop">
                     <div class="row justify-content-between">
                         <div class="col-lg-2">
                             <div class="logo icon-img-100 md-mb80">
-                                <img src="portfolio/assets/imgs/logo-light.png" alt="">
+                                <img src="img/logo/logo.png" alt="">
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="column md-mb50">
-                                <h6 class="sub-title mb-30">Contact</h6>
-                                <h6 class="p-color fw-400">5919 Trussville Crossings <br> Pkwy, Birmingham</h6>
-                                <h6 class="mt-30 mb-15"><a href="#0">Hello@webfolio.com</a></h6>
-                                <a href="#0" class="underline">
-                                    <span class="fz-22 main-color">+2 456 (343) 24 45</span>
+                                <h6 class="mb-30">Contact</h6>
+                                <h6 class="p-color fw-400">5A-410, Rosebill Sky
+                                    Complex, Near Sukan Cross
+                                    Road, Nikol, 
+                                    <br>  Ahmedabad,
+                                    Gujarat, India, 382350
+                                    </h6>
+                                <h6 class=""><a href="mailto: info.keydot@gmail.com">
+                                    info.keydot@gmail.com
+                                    </a></h6>
+                                <a href="#0" class="">
+                                    <span class="fz-22 main-color">+91 91735 11227</span>
                                 </a>
                             </div>
                         </div>
                         <div class="col-lg-2">
                             <div class="column md-mb50">
-                                <h6 class="sub-title mb-30">Useful Links</h6>
+                                <h6 class="mb-30">Useful Links</h6>
                                 <ul class="rest fz-14 opacity-7">
                                     <li class="mb-15">
-                                        <a href="page-about.html">About</a>
+                                        <a href="about.html">About</a>
                                     </li>
                                     <li class="mb-15">
-                                        <a href="page-services.html">Services</a>
+                                        <a href="services.html">Services</a>
                                     </li>
                                     <li class="mb-15">
-                                        <a href="blog-grid-sidebar.html">Blog</a>
+                                        <a href="portfolio.html">Portfolio</a>
                                     </li>
                                     <li>
-                                        <a href="page-contact.html">Contact</a>
+                                        <a href="contact.html">Contact</a>
                                     </li>
                                 </ul>
                             </div>
                         </div>
                         <div class="col-lg-3">
-                            <div class="column subscribe-minimal">
-                                <h6 class="sub-title mb-30">Newsletter</h6>
-                                <div class="form-group mb-40">
+                            <div class="column">
+                                <h6 class="mb-30">Social Media</h6>
+                                <!-- <div class="form-group mb-40">
                                     <input type="text" name="subscrib" placeholder="Your Email">
                                     <button><span class="ti-location-arrow"></span></button>
-                                </div>
+                                </div> -->
                                 <ul class="rest social-icon d-flex align-items-center">
-                                    <li class="hover-this cursor-pointer">
-                                        <a href="#0" class="hover-anim">
-                                            <i class="fab fa-facebook-f"></i>
+                                    <li class="">
+                                        <a href="#0" class="" style="">
+                                            <i class="fab fa-behance"></i>
                                         </a>
                                     </li>
-                                    <li class="hover-this cursor-pointer ml-10">
-                                        <a href="#0" class="hover-anim">
+                                    <li class="">
+                                        <a href="#0" class="" style="">
                                             <i class="fab fa-dribbble"></i>
                                         </a>
                                     </li>
-                                    <li class="hover-this cursor-pointer ml-10">
-                                        <a href="#0" class="hover-anim">
+                                    <li class="">
+                                        <a href="#0" class="" style="">
                                             <i class="fab fa-linkedin-in"></i>
                                         </a>
                                     </li>
-                                    <li class="hover-this cursor-pointer ml-10">
-                                        <a href="#0" class="hover-anim">
+                                    <li class="">
+                                        <a href="#0" class="" style="">
+                                            <i class="fab fa-whatsapp"></i>                                                </a>
+                                    </li>
+                                    <li class="">
+                                        <a href="#0" class="" style="">
                                             <i class="fab fa-instagram"></i>
                                         </a>
                                     </li>
+                                    <li class="">
+                                        <a href="#0" class="" style="">
+                                            <i class="fab fa-upwork"></i>
+                                        </a>
+                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div class="pt-30 pb-30 mt-80 bord-thin-top">
+                  
+                    <div class="bord-thin-top">
                         <div class="text-center">
-                            <p class="fz-14">© 2023 Webfolio is Proudly Powered by <span class="underline main-color"><a
-                                        href="https://themeforest.net/user/ui-themez"
-                                        target="_blank">UI-ThemeZ</a></span>
+                            <p class="">© 2024  <span class=""><a href="https://themeforest.net/user/ui-themez" target="_blank">KeyDot</a></span>
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="circle-blur">
-                    <img src="portfolio/assets/imgs/patterns/blur1.png" alt="">
+                    <img src="img/logo/blur1.png" alt="">
                 </div>
+              
             </footer>
-
-            <!-- ==================== End Footer ==================== -->
 
 
         </div>
@@ -604,11 +491,215 @@
 
 
 
+<style>
+        /* Footer Styles */
+.clean-footer {
+    background-color: black !important;
+    color: #ffffff !important;
+    padding: 40px 0 !important;
+    position: relative !important;
+}
+
+.clean-footer .container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+}
+
+.clean-footer .logo img {
+    width: 150px !important;
+}
+
+.clean-footer h6 {
+    color: #ff9800;
+    font-weight: bold;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+.clean-footer .column {
+    margin-bottom: 50px;
+}
+
+.clean-footer .column h6.sub-title {
+    color: #ff9800;
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+
+.clean-footer .column h6.p-color {
+    color: #ffffff;
+    font-weight: 400;
+}
+
+.clean-footer .column h6.p-color a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.clean-footer .column h6.p-color a:hover {
+    text-decoration: underline;
+}
+
+.clean-footer .column ul.rest {
+    list-style: none;
+    padding: 0;
+}
+
+.clean-footer .column ul.rest li {
+    margin-bottom: 15px;
+}
+
+.clean-footer .column ul.rest li a {
+    color: #ffffff;
+    text-decoration: none;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.clean-footer .column ul.rest li a:hover {
+    opacity: 1;
+}
+
+.clean-footer .subscribe-minimal .form-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.clean-footer .subscribe-minimal .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.clean-footer .subscribe-minimal .form-group button {
+    background-color: #ff9800;
+    color: #1c1c1c;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.clean-footer .subscribe-minimal .form-group button:hover {
+    background-color: #ff9800;
+}
+
+.clean-footer .social-icon {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.clean-footer .social-icon li {
+    margin-right: 5px;
+    width: 25%;
+}
+
+
+
+.clean-footer .social-icon  a {
+    color: #ff9800;
+    font-size: 30px;
+    transition: color 0.3s ease;
+    border: 1px solid   rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+
+}
+
+.clean-footer .social-icon li a:hover {
+    color: #ffffff;
+}
+
+.clean-footer .bord-thin-top {
+    border-top: 1px solid #333333;
+}
+
+.clean-footer .circle-blur img {
+    position: absolute;
+    bottom: -450px;
+    right: -220px;
+    width: 900px;
+    opacity: 0.2;
+}
+
+.clean-footer .text-center p {
+    color: #ffffff;
+    opacity: 0.7;
+    font-size: 25px;
+    margin-bottom: 0px !important;
+}
+
+.clean-footer .text-center p a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.clean-footer .text-center p a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .clean-footer .logo img {
+        max-width: 80px;
+    }
+
+    .clean-footer .column {
+        margin-bottom: 30px;
+    }
+
+    .clean-footer .social-icon li {
+        margin-right: 5px;
+    }
+
+    .clean-footer .social-icon li a {
+        font-size: 16px;
+    }
+
+    .clean-footer .circle-blur img {
+        max-width: 100px;
+        bottom: -30px;
+        right: -30px;
+    }
+}
+
+</style>
 
 
 
 
+<script>
+     document.getElementById('contactform').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
+            // Get form values
+            const name = document.getElementById('form_name').value;
+            const email = document.getElementById('form_email').value;
+            const subject = document.getElementById('form_subject').value;
+            const message = document.getElementById('form_message').value;
+
+            // Construct the WhatsApp message
+            const msg = `Name: ${name} \n Email: ${email} \n Subject: ${subject} \n Message: ${message}`;
+			const pnumber = 9016755950;
+
+			const whatsapp = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(msg)}`;
+
+			window.open(whatsapp, '_blank');
+        });
+		
+           
+</script>
 
     <!-- jQuery -->
     <script src="portfolio/assets/js/jquery-3.6.0.min.js"></script>
@@ -624,9 +715,7 @@
 
     <!-- custom scripts -->
     <script src="portfolio/assets/js/scripts.js"></script>
-
+ 
 </body>
 
-
-<!-- Mirrored from uithemez.com/i/webfolio/webfolio/portfolio-masonry.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 12:32:03 GMT -->
 </html>

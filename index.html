@@ -114,8 +114,7 @@
             $('.navbar-toggler').click(function () {
                 $('.navbar').toggleClass('expanded');
             });
-        });
-									
+        });							
     </script>
     <div id="__next">
         <div class="mil-wrapper" id="top">
@@ -132,7 +131,7 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav mx-auto navbar-nav-center">
                             <li class="nav-item">
-                                <a class="nav-link" href="index.html">About us</a>
+                                <a class="nav-link" href="about.html">About us</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="services.html">Services</a>
@@ -155,10 +154,8 @@
 
             <script>
                 document.getElementById("chat_us").addEventListener("click", function () {
-
                         const pnumber = 9016755950
                         const message = "Hello, I am interested in your products. Please provide me with more details."
-
                         const url = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(message)}`
                         window.location.href = url
                     });

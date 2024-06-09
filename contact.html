@@ -21,6 +21,7 @@
 
     
 
+    <script src="https://kit.fontawesome.com/6962e7c47e.js" crossorigin="anonymous"></script>
     <!-- Plugins -->
     <link rel="stylesheet" href="portfolio/assets/css/plugins.css">
 
@@ -52,6 +53,7 @@
  
          .navbar-nav {
              background-color: black;
+             font-family: 'Poppins', sans-serif !important;
          }
  
          .nav-link {
@@ -125,7 +127,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto navbar-nav-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">About us</a>
+                        <a class="nav-link" href="about.html">About us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="services.html">Services</a>
@@ -215,7 +217,7 @@
                                         <a href="#0"><i class="fab fa-instagram"></i></a>
                                         <a href="#0"><i class="fab fa-whatsapp"></i> </a>
                                         <a href="#0"> <i class="fab fa-linkedin-in"></i></a>
-                                        <a href="#0"> <i class="fab fa-upwork-up"></i></i></a>
+                                        <a href="#0"> <i class="fab fa-upwork"></i></i></a>
                                         
                                     </div>
                                 </div>
@@ -226,33 +228,33 @@
                                         <h6 class="sub-title main-color mb-15">Let's Chat</h6>
                                         <h3 class="text-u ls1">Send a <span class="fw-200">message</span></h3>
                                     </div>
-                                      <form class="form2" id="contactform" method="post" action="">
-        <div class="messages"></div>
-        <div class="controls row">
-            <div class="col-lg-6">
-                <div class="form-group mb-30">
-                    <input id="form_name" type="text" name="name" placeholder="Name" required="required">
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="form-group mb-30">
-                    <input id="form_email" type="email" name="email" placeholder="Email" required="required">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group mb-30">
-                    <input id="form_subject" type="text" name="subject" placeholder="Subject">
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="form-group">
-                    <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
-                </div>
-                <div class="mt-30">
-                    <input type="button" class="butn butn-full butn-bord radius-30" value="Let's Talk" onclick="senddata()">
-                </div>
-            </div>
-        </div>
+                                    <form class="form2" id="contactform">
+                                        <div class="messages"></div>
+                                        <div class="controls row">
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_name" type="text" name="name" placeholder="Name" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_email" type="email" name="email" placeholder="Email" required>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group mb-30">
+                                                    <input id="form_subject" type="text" name="subject" placeholder="Subject">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group">
+                                                    <textarea id="form_message" name="message" placeholder="Message" rows="4" required></textarea>
+                                                </div>
+                                                <div class="mt-30">
+                                                    <input type="submit" class="butn butn-full butn-bord radius-30" value="Let's Talk">
+                                                </div>
+                                            </div>
+                                        </div>
                                     </form>
 
                                 </div>
@@ -261,23 +263,7 @@
                     </div>
                 </section>
 
-                <script>
-                    // Define the senddata() function
-                    function senddata() {
-                        var name = document.getElementById("form_name").value;
-                        var email = document.getElementById("form_email").value;
-                        var subject = document.getElementById("form_subject").value;
-                        var message = document.getElementById("form_message").value;
-                
-                        const message = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\nMessage: ${message}`
-                        const pnumber = 9016755950
-
-                        const url = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(message)}`
-
-                        // Redirect to the URL
-                        window.location.href = url;
-                    }
-                </script>
+            
                 
 
                 <!-- ==================== End Contact ==================== -->
@@ -390,7 +376,7 @@
                     </div>
                     <div class="bord-thin-top">
                         <div class="text-center">
-                            <p class="fz-14">© 2024  <span class=""><a href="https://themeforest.net/user/ui-themez" target="_blank">KeyDot</a></span>
+                            <p class="">© 2024  <span class=""><a href="https://themeforest.net/user/ui-themez" target="_blank">KeyDot</a></span>
                             </p>
                         </div>
                     </div>
@@ -598,7 +584,27 @@
 
 
 
+<script>
+     document.getElementById('contactform').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submission
 
+            // Get form values
+            const name = document.getElementById('form_name').value;
+            const email = document.getElementById('form_email').value;
+            const subject = document.getElementById('form_subject').value;
+            const message = document.getElementById('form_message').value;
+
+            // Construct the WhatsApp message
+            const msg = `Name: ${name} \n Email: ${email} \n Subject: ${subject} \n Message: ${message}`;
+			const pnumber = 9016755950;
+
+			const whatsapp = `https://api.whatsapp.com/send?phone=${pnumber}&text=${encodeURIComponent(msg)}`;
+
+			window.open(whatsapp, '_blank');
+        });
+		
+           
+</script>
 
     <!-- jQuery -->
     <script src="portfolio/assets/js/jquery-3.6.0.min.js"></script>
@@ -614,9 +620,7 @@
 
     <!-- custom scripts -->
     <script src="portfolio/assets/js/scripts.js"></script>
-
+ 
 </body>
 
-
-<!-- Mirrored from uithemez.com/i/webfolio/webfolio/page-contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 06 Jun 2024 12:31:56 GMT -->
 </html>
