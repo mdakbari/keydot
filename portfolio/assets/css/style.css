@@ -1,18 +1,5 @@
 @charset "UTF-8";
-/*-----------------------------------------------------------------------------------
 
-    Theme Name: Webfolio
-    Theme URI: http://
-    Description: Creative Agency & Portfolio
-    Author: UI-ThemeZ
-    Author URI: http://themeforest.net/user/UI-ThemeZ
-    Version: 1.0
-
------------------------------------------------------------------------------------*/
-/* Variables
------------------------------------------------------------------*/
-/* Typography
------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
@@ -5951,8 +5938,9 @@ footer.clean-footer.crev .circle-blur {
   
   padding-right: 4px;
   padding-top: 10px;
+
   padding-bottom: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* border: 1px solid rgba(255, 255, 255, 0.1); */
   /* border-radius: 30px; */
   display: inline-block;
   border-left: none;
@@ -5969,7 +5957,7 @@ footer.clean-footer.crev .circle-blur {
   cursor: pointer;
   position: relative;
   opacity: .7;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 .filtering span.active {
