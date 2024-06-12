@@ -93,18 +93,6 @@
              background-color: #ff9800;
              color: white;
          }
-
-         .video-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .video-container video {
-      width: 100%;
-      height: auto;
-      max-width: 1000pxs;
-    }
          
      </style>
 </head>
@@ -180,26 +168,48 @@
             <main class="main-bg o-hidden">
 
                 <main class="main-bg">
+<style>
+.page-header {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Ensure header takes full viewport height */
+}
 
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1; /* Ensure the video is behind the content */
+}
 
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black; /* Fallback color */
+}
+
+</style>
 
                     <!-- ==================== Start Header ==================== -->
     
-                    <header class="page-header bg-img section-padding valign"
-                        data-background="portfolio/assets/imgs/background/bg4.jpg" data-overlay-dark="8">
-                        <div class="container" style="padding-top: 0px;" >
-                            <div class="row">
-                                <div class="col-12">
-                                    <div class="text-center video-container">
-                                        <video autoplay loop>
-                                          <source src="img/portfolio/food/Kedyot.mp4" type="video/mp4">
-                                          Your browser does not support the video tag.
-                                        </video>
-                                      </div>
-                                </div>
-                            </div>
+                    <header class="page-header bg-video section-padding valign" data-overlay-dark="8">
+                        <div class="video-background">
+                            <video autoplay loop>
+                                <source src="img/portfolio/keydot.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                     </header>
+                    
     
                     <!-- ==================== End Header ==================== -->
     
