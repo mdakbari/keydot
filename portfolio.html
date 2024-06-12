@@ -93,6 +93,18 @@
              background-color: #ff9800;
              color: white;
          }
+
+         .video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .video-container video {
+      width: 100%;
+      height: auto;
+      max-width: 1000pxs;
+    }
          
      </style>
 </head>
@@ -175,12 +187,15 @@
     
                     <header class="page-header bg-img section-padding valign"
                         data-background="portfolio/assets/imgs/background/bg4.jpg" data-overlay-dark="8">
-                        <div class="container pt-80">
+                        <div class="container" style="padding-top: 0px;" >
                             <div class="row">
                                 <div class="col-12">
-                                    <div class="text-center">
-                                        <h1 class="text-u ls1 fz-80"><span class="fw-200">KeyDot</span></h1>
-                                    </div>
+                                    <div class="text-center video-container">
+                                        <video autoplay loop>
+                                          <source src="img/portfolio/food/Kedyot.mp4" type="video/mp4">
+                                          Your browser does not support the video tag.
+                                        </video>
+                                      </div>
                                 </div>
                             </div>
                         </div>
