@@ -739,6 +739,7 @@ $(window).on("load", function () {
     -----------------------------  isotope Masonery   ------------------------------
     ============================================================================= */
 
+    
     $('.gallery').isotope({
         itemSelector: '.items'
     });
@@ -763,6 +764,7 @@ $(window).on("load", function () {
     $('.filtering').on('click', 'span', function () {
         $(this).addClass('active').siblings().removeClass('active');
     });
+
 
 
     /* =============================================================================
