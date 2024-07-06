@@ -81,7 +81,7 @@
          }
  
          .company-logo {
-             height: 65px; /* Adjust the height as needed */
+             height: 65px; 
              width: auto;
          }
  
@@ -218,8 +218,47 @@
                         {
                             margin-top: 50px !important;
                         }
+                        .slider-container {
+                            position: relative;
+                            width: 275px;
+                            height: 200px;
+                            overflow: hidden;
+                        }
+
+                        .slider-img {
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            opacity: 0;
+                            transition: opacity 1s ease-in-out;
+                        }
+
+                        .slider-img.active {
+                            opacity: 1;
+                        }
                     </style>
-               
+                <script>
+                    document.addEventListener("DOMContentLoaded", function() {
+                        function setupSlider(container) {
+                            let currentIndex = 0;
+                            const images = container.querySelectorAll('.slider-img');
+                            const totalImages = images.length;
+            
+                            function showNextImage() {
+                                images[currentIndex].classList.remove('active');
+                                currentIndex = (currentIndex + 1) % totalImages;
+                                images[currentIndex].classList.add('active');
+                            }
+            
+                            setInterval(showNextImage, 3000); // Change image every 3 seconds
+                        }
+            
+                        const sliders = document.querySelectorAll('.slider-container');
+                        sliders.forEach(setupSlider);
+                    });
+                </script>
 
                     <section class="mil-dark-bg">
                         <div class="mi-invert-fix">
@@ -240,8 +279,10 @@
                                             <h6 class="mil-muted mil-mb-30">SOCAIL MEDIA  <br> DESIGNS</h6>
                                             <p class="mil-muted mil-mb-30">Social Media Posters, Reels,
                                                 and Page Manage</p>
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-
+                                            <div class="slider-container">
+                                                <img width="275" height="200" src="img/services/SOCIAL MEDIA DESIGN/SOCIAL MEDIA DESIGN (1).jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/SOCIAL MEDIA DESIGN/SOCIAL MEDIA DESIGN.jpg" alt="Social Media Design" class="slider-img">
+                                            </div>
                                         </a>
                                     </div>
                                   
@@ -250,7 +291,7 @@
                                             <h6 class="mil-muted mil-mb-30"> PACKAGING  <br>DESIGN</h6>
                                             <p class="mil-muted mil-mb-30">Box, Label,  Stiker Bag</p>
                                             <br>
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
+                                            <img width="275" height="200" src="img/services/PACKAGING DESIGN.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -260,8 +301,11 @@
                                             <p class="mil-muted mil-mb-30">Flyer, Poster, Bill Board, Store
                                                 Design, Magazine Ads</p>
                                             
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-
+                                            <div class="slider-container">
+                                                <img width="275" height="200" src="img/services/MARKETING & ADVERTISING/MARKETING & ADVERTISING.jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/MARKETING & ADVERTISING/MARKETING & ADVERTISING (1).jpg" alt="Social Media Design" class="slider-img">
+                                                <img width="275" height="200" src="img/services/MARKETING & ADVERTISING/MARKETING & ADVERTISING (2).jpg" alt="Social Media Design" class="slider-img">
+                                            </div>
                                         </a>
                                     </div>
                                     
@@ -271,9 +315,12 @@
                                             <p class="mil-muted mil-mb-30">Logo, Slogan, Color Palettes,
                                                 Visiting Card/ Digital Business
                                                 Card, Letter Head, Tshirt</p>
-                                            
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-
+                                            <div class="slider-container">
+                                                <img width="275" height="200" src="img/services/BRAND DESIGN/1.jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/BRAND DESIGN/2.jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/BRAND DESIGN/9.jpg" alt="Social Media Design" class="slider-img active">
+                                               
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -283,9 +330,11 @@
                                                 Datasheet, Company Profile,
                                                 Presentation</p>
                                             
-                                        
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-
+                                            <div class="slider-container">
+                                                <img width="275" height="200" src="img/services/INFORMATIVE DESIGN/7.jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/INFORMATIVE DESIGN/16.jpg" alt="Social Media Design" class="slider-img active">
+                                                
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -296,10 +345,11 @@
                                                 <br> Video
                                                 development, <br> Motion    
                                             </p>
-                                            
-                                         
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
-
+                                            <div class="slider-container">
+                                                <img width="275" height="200" src="img/services/3d/12.jpg" alt="Social Media Design" class="slider-img active">
+                                                <img width="275" height="200" src="img/services/3d/15.jpg" alt="Social Media Design" class="slider-img active">
+                                                
+                                            </div>  
                                         </a>
                                     </div>
                                     <div class="col-md-4 p-0">
@@ -309,7 +359,7 @@
                                                 SAP Entry, Backend Entry
                                                 , Excel, Data Entry </p>
                                          
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
+                                            <img width="275" height="200" src="img/services/data entry works.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -321,7 +371,7 @@
                                                 Festival Party's</p>
                                             
                                           
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
+                                            <img width="275" height="200" src="img/services/invitation.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -334,7 +384,7 @@
                                             </p>
                                             
                                            
-                                            <img width="275" height="200" src="img/blog/1.jpg" alt="Data Entry Works" class="service-img">
+                                            <img width="275" height="200" src="img/services/webdevelopme.jpg" alt="Data Entry Works" class="service-img">
 
                                         </a>
                                     </div>
@@ -351,7 +401,7 @@
                                         <img src="img/logo/logo.png" style="margin-left: 29px;" alt="">
                                        
                                     </div>
-                                    <h6 class="p-color fw-400" style="color: #ffffff; font-family: 400; text-align: center;">
+                                    <h6 class="p-color fw-400" style="color: #ffffff; font-family: 400; text-align: left;">
                                         Work diligently and play creatively every day.
                                         Our focus encompasses strategic planning,
                                         innovative design, and successful delivery.
@@ -403,31 +453,31 @@
                                         </div> -->
                                         <ul class="rest social-icon d-flex align-items-center">
                                             <li class="hover-this cursor-pointer">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://www.behance.net/keydot" class="hover-anim" style="">
                                                     <i class="fab fa-behance"></i>
                                                 </a>
                                             </li>
                                             <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://dribbble.com/Keydot" class="hover-anim" style="">
                                                     <i class="fab fa-dribbble"></i>
                                                 </a>
                                             </li>
                                             <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://www.linkedin.com/company/101474731/admin/dashboard/" class="hover-anim" style="">
                                                     <i class="fab fa-linkedin-in"></i>
                                                 </a>
                                             </li>
                                             <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://wa.me/message/V5GOBBTYDUVTJ1" class="hover-anim" style="">
                                                     <i class="fab fa-whatsapp"></i>  </a>
                                             </li>
                                             <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://www.instagram.com/ads_graphics_by_keydot/" class="hover-anim" style="">
                                                     <i class="fab fa-instagram"></i>
                                                 </a>
                                             </li>
                                             <li class="hover-this cursor-pointer ml-10">
-                                                <a href="#0" class="hover-anim" style="">
+                                                <a href="https://www.upwork.com/freelancers/~01b1e9596b32b9c7bf" class="hover-anim" style="">
                                                     <i class="fab fa-upwork"></i>
                                                 </a>
                                             </li>
@@ -438,7 +488,7 @@
                             </div>
                             <div class="bord-thin-top">
                                 <div class="text-center">
-                                    <p class="fz-14">© 2024  <span class="underline main-color"><a href="https://themeforest.net/user/ui-themez" target="_blank">KeyDot</a></span>
+                                    <p class="fz-14">© 2024  <span class="underline main-color"><a href="" target="_blank">KeyDot</a></span>
                                     </p>
                                 </div>
                             </div>
