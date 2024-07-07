@@ -7729,10 +7729,10 @@ footer.clean-footer.crev .circle-blur {
   .sec-head .sub-title span.thin {
     margin: 0;
   }
-  .navbar .logo:after {
+  /* .navbar .logo:after {
     display: none;
-  }
-  .navbar .contact-button {
+  } */
+  /* .navbar .contact-button {
     display: none;
   }
   .navbar .mega-menu .item-img .img {
@@ -7841,7 +7841,7 @@ footer.clean-footer.crev .circle-blur {
   }
   .navbar .navbar-nav .mega-menu .item-img:hover:after {
     width: 10px;
-  }
+  } */
   .main-header {
     min-height: auto;
   }

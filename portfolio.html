@@ -24,77 +24,136 @@
     <!-- Core Style Css -->
     <link rel="stylesheet" href="portfolio/assets/css/style.css">
 
-    
     <style>
-        .navbar {
-         background-color: black;
-     transition: background-color 0.3s ease-in-out;
-     height: 80px;
-     margin: auto
-         }
-        
-         .navbar.expanded {
-             background-color: black;
-         }
- 
-         .navbar-brand {
-             color: #ffffff;
-             margin-right: 20px;
-         }
- 
-         .navbar-brand:hover {
-             color: #ff9800;
-             text-decoration: underline;
-         }
- 
-         .navbar-nav {
-             background-color: black;
-             font-family: 'Poppins', sans-serif !important;
-         }
- 
-         .nav-link {
-             color: #ffffff;
-             margin-right: 15px;
-             text-decoration: none;
-             position: relative;
-             margin-left: 20px;
-             text-align: center;
-             
-         }
- 
-         .nav-link:hover {
-             color: #ff9800;
-             text-decoration: none;
-         }
- 
-         .company-logo {
-             height: 65px; /* Adjust the height as needed */
-             width: auto;
-         }
- 
-         .navbar-nav-center {
-             margin: 0 auto;
-         }
- 
-         .chat-button {
-             background-color: #ff9800;
-             color: black;
-             border: none;
-             padding: 10px 20px;
-             border-radius: 10px;
-             font-size: 15px;
-         }
- 
-         .chat-button:hover {
-             background-color: #ff9800;
-             color: white;
-         }
-         
-     </style>
+        /* General Navbar Styling */
+.navbar {
+    background-color: black;
+    /* padding: 10px 20px; */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.company-logo {
+    width: auto;
+    height: 65px;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 0.5%29" stroke-width="2" linecap="round" linejoin="round" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.nav-link {
+    color: #ffffff;
+    font-size: 16px;
+    /* padding: 8px 15px; */
+    transition: color 0.3s;
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 400;
+}
+
+.nav-link:hover {
+    color: #ff9800;
+}
+
+.navbar-nav-center {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-grow: 1;
+    
+    width: 100%;
+}
+
+.btn.chat-button {
+    background-color: #ff9800;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn.chat-button:hover {
+    background-color: #855103;
+}
+
+.close-btn {
+    display: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 250px;
+        background-color: black;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+        transform: translateX(100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 60px;
+        z-index: 1040;
+    }
+
+    .navbar-collapse.show {
+        transform: translateX(0);
+    }
+
+    .navbar-nav-center {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 15px;
+    }
+
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .btn.chat-button {
+        margin: 20px 15px 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    .close-btn {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: #333;
+        cursor: pointer;
+        z-index: 1050;
+    }
+}
+
+@media (max-width: 576px) {
+    .nav-link {
+        font-size: 14px;
+        padding: 8px 10px;
+    }
+
+    .btn.chat-button {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+
+    .company-logo {
+        width: 170px;
+    }
+}
+
+    </style>
 </head>
 
 <body>
-
 
 
     <script>
@@ -102,7 +161,7 @@
             $('.navbar-toggler').click(function () {
                 $('.navbar').toggleClass('expanded');
             });
-        });
+        });	
     </script>
 
 
@@ -121,6 +180,10 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
+                <button class="close-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="true" aria-label="Close navigation">
+                    &times;
+                </button>
                 <ul class="navbar-nav mx-auto navbar-nav-center">
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About us</a>
@@ -138,7 +201,7 @@
                         <a class="nav-link" href="contact.html">Contact us</a>
                     </li>
                 </ul>
-                <a class="btn chat-button ms-auto" id="chat_us" >Chat with Us</a>
+                <a class="btn chat-button ms-auto" id="chat_us">Chat with Us</a>
             </div>
         </div>
     </nav>
