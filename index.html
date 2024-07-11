@@ -51,7 +51,7 @@
 
 .company-logo {
     width: auto;
-    height: 65px;
+    /* height: 65px; */
 }
 
 .navbar-toggler {
@@ -91,9 +91,10 @@
     color: #fff;
     padding: 8px 20px;
     border-radius: 20px;
-    text-align: center;
     transition: background-color 0.3s;
+    white-space: nowrap;
 }
+
 
 .btn.chat-button:hover {
     background-color: #855103;
@@ -186,7 +187,7 @@
             <nav class="navbar navbar-expand-lg fixed-top">
                 <div class="container" id="nav_container">
                     <a class="navbar-brand" href="index.html">
-                        <img src="img/logo/logo.png" alt="KeyDot Logo" class="company-logo">
+                        <img src="img/logo/logo 2.png" alt="KeyDot Logo" class="company-logo">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -208,13 +209,13 @@
                                 <a class="nav-link" href="portfolio.html">Portfolio</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="download.html">Download</a>
+                                <a class="nav-link" href="img/keydot.pdf" target="_blank">Download</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="contact.html">Contact us</a>
                             </li>
                         </ul>
-                        <a class="btn chat-button ms-auto" id="chat_us">Chat with Us</a>
+                        <a class="btn chat-button" id="chat_us">Chat with Us</a>
                     </div>
                 </div>
             </nav>
@@ -813,7 +814,7 @@
                                     <div class="col-md-4 p-0">
                                         <a class="mil-service-card-sm mil-up" href="portfolio.html">
                                             <h5 class="mil-muted mil-mb-30">WEB DEVELOPMENT</h5>
-                                            <p class="mil-muted mil-mb-30">SUI UX , Theam Design
+                                            <p class="mil-muted mil-mb-30">UI UX , Theam Design
                                                 PDF, Website
                                                 Development    
                                             </p>
@@ -886,8 +887,8 @@
                                                     d="M299 380H1V678H299V380ZM0 379V679H300V379H0Z" class="mil-move">
                                                 </path>
                                             </svg></div>
-                                        <div class="mil-up mil-img-frame" ><img
-                                                src="img/logo/founder.jpeg"  height="500" alt="img" class="mil-scale" data-value-1="1"
+                                        <div class="mil-up mil-img-frame" style="margin-top: 200px;" ><img
+                                                src="img/logo/founder.jpeg"  alt="img" class="mil-scale" data-value-1="1"
                                                 data-value-2="1.2" />
                                             </div>
                                     </div>
@@ -895,6 +896,13 @@
                             </div>
                         </div>
                     </section>
+
+                    <style>
+                        .mil-img-frame img{
+                            /* width: 100%; */
+                            height: 90%;
+                        }
+                    </style>
 
                     <section class="logo-section">
                         <div class="container mil-p-120-30 logo-section">
@@ -990,8 +998,8 @@
                         <div class="container pb-40 pt-40 ontop">
                             <div class="row justify-content-between">
                                 <div class="col-lg-3">
-                                    <div class="logo icon-img-100 md-mb80" style="margin-left: 10px;">
-                                        <img src="img/logo/logo.png" style="margin-left: 29px;" alt="">
+                                    <div class="logo icon-img-100 md-mb80">
+                                        <img src="img/logo/logo.png" alt="">
                                        
                                     </div>
                                     <h6 class="p-color fw-400" style="color: #ffffff; font-family: 400; text-align: left;">
