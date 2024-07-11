@@ -7934,10 +7934,10 @@ footer.clean-footer.crev .circle-blur {
   .work-crev .swiper-slide {
     width: 100% !important;
   }
-  footer.clean-footer.crev:after,
+  /* footer.clean-footer.crev:after,
   footer.clean-footer.crev .circle-blur {
     display: none;
-  }
+  } */
   .team-single .bord {
     padding: 0 40px 80px;
   }
